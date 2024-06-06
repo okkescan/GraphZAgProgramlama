@@ -1,0 +1,71 @@
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform:none;
+    transition: .2s linear;
+}
+:root{
+    --main-color: orange;
+    --black:#13131a;
+    --bg:#010103;
+    --border: .1rem solid rgba(255,255,255,.3);
+    --light: #DFF5FF;
+    --turuncumsu: #FFC374;
+}
+
+html{
+    font-size: 74.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+.cards {
+    position: relative;
+    padding: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.cards .card{
+    width: 350px;
+    height: 500px;
+    background-color: #FFC374;
+    border-radius: 6px;
+    text-align: center;
+}
+.cards .card h5{
+    font-size: 2rem;
+    text-align: center;
+}
+.cards .card p {
+    font-size: 1.6rem;
+    text-align: center;
+}
+.cards .card a{
+    font-size: 1.6rem;
+    text-align: center;
+    align-items: center;
+    background-color: #000;
+    border-radius: 6px;
+    width: 80px;
+    height: 30px;
+    color: #fff;
+}

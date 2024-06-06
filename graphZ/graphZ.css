@@ -1,0 +1,177 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform:none;
+    transition: .2s linear;
+}
+:root{
+    --main-color: orange;
+    --black:#13131a;
+    --bg:#010103;
+    --border: .1rem solid rgba(255,255,255,.3);
+    --light: #DFF5FF;
+    --turuncumsu: #FFC374;
+    --iconhover: #331D2C;
+}
+
+html{
+    font-size: 56.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+body{
+    background: #FAF0E6;
+}
+section{
+    padding: 2rem 0%;
+}
+
+
+header{
+    background-color: #FFC94A;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 10;
+}
+
+header .logo {
+    display: flex;
+    flex-direction: column;
+    font-size: 4rem;
+    font-weight: 800;
+    font-family: "Sedan", serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #453F78;
+}
+
+header  a{ 
+    margin: 1.5rem;
+    padding: .5rem;
+    font-size: 2.4rem;
+    color: #222831 ;
+}
+header a:hover{
+    border-bottom: 1px solid #000;
+}
+
+
+/* Video konteynerini stillendirme */
+#video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Diğer içeriklerin üzerine gelmesini sağlamak için */
+}
+
+/* Videoyu stillendirme */
+#video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Videoyu konteyner boyutuna sığdırmak için */
+}
+#video-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Siyah renk ve %50 opaklık */
+}
+/* Diğer içeriği stillendirme */
+.content {
+    position: relative;
+    z-index: 5; /* Video arka planının üzerinde olmasını sağlar */
+    padding: 20px;
+    color: white; /* İçerik yazı rengi */
+    text-align: center;
+    margin-top: 20%;
+    transform: translate(0,-50%);
+}
+.content h5{
+    font-size: 5rem;
+}
+.content h4{
+    font-size: 3.6rem;
+}
+.content p{
+    margin-top: 5rem;
+    font-size: 3rem;
+    font-family: "Roboto Condensed", sans-serif !important;
+text-decoration:underline;
+}
+.graf{
+    /* margin-top: 20%;
+    margin-left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #2727271f;
+    text-align: center; */
+
+    position: relative;
+    top: 100px;
+    margin-top: 0; 
+    width: 100%;
+    max-width: 100%;
+    height: calc(100vh - 100px);
+    background-color: #c2c2c26f;
+}
+.labels text {
+    font-size: 16px; 
+    font-weight: 700;
+}
+button{
+    position: absolute;
+    margin-top: 200px !important;
+    background-color: #ffdeb3;
+    font-size: 2.6rem;
+    border-radius: 6px;
+    transform: translate(-50%,0);
+    width: 20rem;
+    box-shadow: 0px 0px 6px 6px #fff;
+}
+button:hover{
+    position: absolute;
+    margin-top: 200px !important;
+    background-color: #ffb452;
+    font-size: 2.6rem;
+    border-radius: 6px;
+    transform: translate(-50%,0);
+    width: 20rem;
+    box-shadow: 0px 0px 6px 6px #000;
+}
+button:hover .btn{
+    color: #fff;
+}
+.btn{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    font-family: "Roboto Condensed", sans-serif !important;
+
+}
